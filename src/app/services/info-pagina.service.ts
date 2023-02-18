@@ -13,7 +13,7 @@ export class InfoPaginaService {
   equipo: any[] =[];
 
   constructor(private http: HttpClient) {
-    console.log("Servicio pagina listo");
+    // console.log("Servicio pagina listo");
     this.cargarInfo();
     this.cargarEquipo();
   }
@@ -25,7 +25,7 @@ export class InfoPaginaService {
         this.cargada = true;
         this.info = resp;
   
-        console.log(resp);
+        // console.log(resp);
       })
     
   }
@@ -36,7 +36,7 @@ export class InfoPaginaService {
   
         this.equipo = resp;
   
-        console.log(resp);
+        // console.log(resp);
       })
   }
 }
